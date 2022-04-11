@@ -1,6 +1,8 @@
 # BankOps
 <h1 align="center">Hola, soy Joaquin Del Vecchio</h1>
 <h3 align="center">Un desarrollador Front-end y estudiante de Ingenieria en Informatica</h3>
+<p>Esta aplicacion simula transferencia de dinero entre cuentas y pedidos de prestamos, entre otras cosas. Para poder usarla se pre definieron distintos usuarios con los cuales podra iniciar sesion, trasnferir dinero, pedir prestamos o eliminar sus cuentas.
+Joaquin Del Vecchio usuario:"jdv" PIN:1111, Nicolas Gonzalez usuario:"ng" PIN:2222 y Will Dembler usuario:"wd" PIN:3333</p>
 
 - 🔭 Actualmente estoy trabajando en [BankOps](https://github.com/J-delvecchio/BankOps)
 
