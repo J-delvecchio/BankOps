@@ -1,5 +1,7 @@
 'use strict';
 
+console.log("Esta aplicacion simula transferencia de dinero entre cuentas y pedidos de prestamos, entre otras cosas. Para poder usarla se pre definieron distintos usuarios con los cuales podra iniciar sesion, trasnferir dinero, pedir prestamos o eliminar sus cuentas. Joaquin Del Vecchio usuario:"jdv" PIN:1111, Nicolas Gonzalez usuario:"ng" PIN:2222 y Will Dembler usuario:"wd" PIN:3333")
+
 // Data
 const account1 = {
   username: 'jdv',
@@ -137,7 +139,6 @@ const displayMovements = function (acc, sorted = false) {
       new Date(),
       new Date(acc.movementsDates[i])
     );
-    console.log(daysPassed);
     const date =
       daysPassed == 0
         ? 'Today'
