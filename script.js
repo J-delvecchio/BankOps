@@ -4,7 +4,7 @@
 const account1 = {
   username: 'jdv',
   owner: 'Joaquin Del Vecchio',
-  movements: [2000.1352, 4500, -4000.12, 3000, -6500, 13000, 700.55, 1500],
+  movements: [2000.1352, 4500, -4000.12, 3000, -6500, 13000, -700.55, 1500],
   interestRate: 1.2, //% 
   pin: 1111,
   movementsDates: [
