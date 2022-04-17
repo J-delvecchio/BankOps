@@ -139,11 +139,11 @@ const displayMovements = function (acc, sorted = false) {
     );
     const date =
       daysPassed == 0
-        ? 'Today'
+        ? 'Hoy'
         : daysPassed == 1
-        ? 'Yesterday'
+        ? 'Ayer'
         : daysPassed <= 7
-        ? `${daysPassed} days ago`
+        ? `hace ${daysPassed} días`
         : `${year}/${month}/${day}`;
 
     const operation = mov > 0 ? 'deposit' : 'withdrawal';
