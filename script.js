@@ -341,6 +341,7 @@ btnClose.addEventListener('click', (e) => {
 });
 
 btnSort.addEventListener('click', function () {
+  containerMovements.innerHTML = '';
   displayMovements(currentAcount, !sorted);
   sorted = !sorted;
 });
