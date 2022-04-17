@@ -40,8 +40,8 @@ const account2 = {
 };
 
 const account3 = {
-  username: 'wd',
-  owner: 'Will Demner ',
+  username: 'jp',
+  owner: 'Juan Pérez ',
   movements: [5000, 3400, -150, -790, -3210, -1000, 400, -30],
   interestRate: 1.8,
   pin: 3333,
@@ -55,7 +55,7 @@ const account3 = {
     '2020-06-25T18:49:59.371Z',
     '2020-07-26T12:01:20.894Z',
   ],
-  currency: 'USD',
+  currency: 'ARS',
 };
 
 const accounts = [account1, account2, account3];
