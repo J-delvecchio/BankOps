@@ -308,6 +308,7 @@ const closeAccount = function () {
   ) {
     accounts.splice(accounts.indexOf(currentAcount), 1);
     containerApp.style.opacity = 0;
+    labelWelcome.textContent = "Inicia sesion para comenzar";
   }
   inputCloseUsername.value = inputClosePin.value = '';
   clearInterval(timer);
