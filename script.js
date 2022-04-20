@@ -148,7 +148,7 @@ const displayMovements = function (acc, sorted = false) {
 
     const operation = mov > 0 ? 'deposit' : 'withdrawal';
     const html = `<div class="movements__row">
-    <div class="movements__type movements__type--${operation}">${operation} ${
+    <div class="movements__type movements__type--${operation}">${operation == 'deposit'? 'deposito' : 'retiro'} ${
       i + 1
     }</div>
     <div class="movements__date">${date}</div>
