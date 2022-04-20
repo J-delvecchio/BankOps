@@ -94,14 +94,6 @@ let currentAcount,
   timer,
   sorted = false;
 let today = new Date();
-const refreshDate = () => {
-  today = new Date();
-  labelDate.textContent = `${today.getDate()}/${
-    today.getMonth() + 1
-  }/${today.getFullYear()}, ${today.getHours()}:${today.getMinutes()}`;
-};
-refreshDate();
-setInterval(refreshDate, 1000);
 containerMovements.innerHTML = '';
 
 /////////////////////////////////////////////////
@@ -114,11 +106,21 @@ const getDayMonthYearHourMinuteSecond = (date) => {
     date.getFullYear(),
     `${date.getMonth() + 1}`.padStart(2, 0),
     `${date.getDate()}`.padStart(2, 0),
-    date.getHours(),
-    date.getMinutes(),
-    date.getSeconds(),
+    `${date.getHours()}`.padStart(2, 0),
+    `${date.getMinutes()}`.padStart(2, 0),
+    `${date.getSeconds()}`.padStart(2, 0),
   ];
 };
+
+const refreshDate = () => {
+  today = new Date();
+  let year, month, day, hour, minute, second;
+  [year, month, day, hour, minute, second] =
+    getDayMonthYearHourMinuteSecond(today);
+  labelDate.textContent = `${day}/${month}/${year}, ${hour}:${minute}`;
+};
+refreshDate();
+setInterval(refreshDate, 1000);
 
 const calcDayPassed = (date1, date2) =>
   Math.floor(Math.abs(date2 - date1) / (1000 * 3600 * 24));
